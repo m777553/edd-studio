@@ -1,13 +1,15 @@
 .header__wrap {
-  height: 50vh;
-  background: sienna url(../../../assets/images/header/1.jpg) no-repeat 0 20%;
+  height: 90vh;
   background-size: cover;
+  position: relative;
 }
+
 
 .header__text {
   margin-left: 50px;
-  padding-top: 50px;
-  font-size: 30px;
+  padding-top: 125px;
+  font-size: 60px;
+  line-height: 80px;
   text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5),
   2px -2px 0px rgba(255, 255, 255, 0.5),
   -2px 2px 0px rgba(255, 255, 255, 0.5),
@@ -25,8 +27,12 @@
   border: 1px solid black;
   border-radius: 50%;
   margin-left: 50px;
-  margin-top: 20px;
+  margin-top: 50px;
   cursor: pointer;
+
+  &:hover, &:focus{
+    box-shadow: 2px 2px 3px white, -2px -2px 3px white;
+  }
 }
 
 .header__nav-wrap {
@@ -34,6 +40,9 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  top: calc(90vh - 75px);
+  position: absolute;
+  width: 100%;
 }
 
 .header__nav-btn {
@@ -49,47 +58,27 @@
   justify-content: center;
   flex-direction: column;
   cursor: pointer;
-}
-
-.wrap {
-  background-color: black;
-  color: #ff6a00;
-  display: flex;
-  margin: 0 auto;
-  justify-content: space-around;
-  align-items: center;
-  padding: 80px 80px 0;
-}
-
-.image-wrap {
-  max-width: 492px;
-  border-radius: 83px;
-  padding: 15px;
-
-  img {
-    display: block;
-    width: 100%;
-    border-radius: 10px;
+  &:hover, &:focus{
+    box-shadow: 2px 2px 3px white, -2px -2px 3px white;
   }
 }
 
-.text-title {
-  border: 2px solid white;
-  width: fit-content;
-  padding: 3px 45px;
+
+.img-bg{
+  background: sienna url(../../../assets/images/header/1.jpg) no-repeat 0 20%;
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+  &--2{
+    background-image: url(../../../assets/images/header/2.jpg);
+  }
+  &--3{
+    background-image: url(../../../assets/images/header/3.jpg);
+  }
 }
 
-.text-list {
-  line-height: 35px;
-  margin: 20px 0 0;
-  font-size: 19px;
-  padding: 10px 10px 10px 30px;
-}
-
-.text-wrap {
-  max-width: 585px;
-}
-
-.how-can-help img{
-  max-height: 700px;
+.carousel{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
 }

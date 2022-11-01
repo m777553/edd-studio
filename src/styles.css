@@ -1,5 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import "styles/fonts.scss";
+@import 'animate.css';
+/*@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel.scss';*/
+/*@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default.scss';*/
 
 body, h1, h2{
   margin: 0;

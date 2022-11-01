@@ -1,0 +1,84 @@
+.wrap {
+  background-color: black;
+  color: #ff6a00;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px 80px 0;
+  &.about-me{
+    padding-top: 150px;
+  }
+  &.why-are-everyone-happy{
+    padding-bottom: 150px;
+  }
+}
+
+.image-wrap {
+  max-width: 492px;
+  border-radius: 83px;
+  padding: 15px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 500px;
+    height: 325px;
+    border: 3px solid #ff6a00;
+    top: 35px;
+    left: -20px;
+  }
+  &.vertical-img::before, &.vertical-img::after {
+    height: 600px;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 500px;
+    height: 325px;
+    border: 3px solid #ffffff;
+    bottom: 35px;
+    right: -20px;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+.text-title {
+  border: 2px solid white;
+  width: fit-content;
+  padding: 3px 45px;
+}
+
+.text-list {
+  line-height: 35px;
+  margin: 20px 0 0;
+  font-size: 19px;
+  padding: 10px 10px 10px 30px;
+  list-style: none;
+
+
+  p {
+    margin-left: -30px;
+  }
+}
+
+.text-item::before {
+  content: '✓';
+  padding-right: 10px;
+}
+
+.text-wrap {
+  max-width: 585px;
+}
+
+.how-can-help img {
+  max-height: 700px;
+}
