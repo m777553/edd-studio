@@ -6,21 +6,23 @@ import {HeaderComponent} from './common/header/header.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {CarouselModule} from "ngx-owl-carousel-o";
 import {AboutMeSectionComponent} from "./common/about-me-section/about-me-section.component";
-import {MainPagesComponent} from "./common/main-pages/main-pages.component";
 import {RouterModule} from "@angular/router";
+import {AppRoutingModule} from "./app-routing.module";
+import {WeddingComponent} from "./common/main-pages/wedding/wedding.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     AboutMeSectionComponent,
-    MainPagesComponent
+    WeddingComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     CarouselModule,
-    RouterModule
+    RouterModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

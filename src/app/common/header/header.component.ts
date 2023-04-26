@@ -7,7 +7,7 @@ import {carouselOptions} from "./carouselOptions.constant";
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  carouselOptions = carouselOptions
+  carouselOptionsHeader = carouselOptions
 
   constructor() { }
 

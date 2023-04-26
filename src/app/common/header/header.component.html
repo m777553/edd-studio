@@ -1,6 +1,6 @@
 <header>
   <div class="header__wrap">
-    <owl-carousel-o [options]="carouselOptions" class="carousel">
+    <owl-carousel-o [options]="carouselOptionsHeader" class="carousel">
       <ng-template carouselSlide><div class="img-bg img-bg--1"></div></ng-template>
       <ng-template carouselSlide><div class="img-bg img-bg--2"></div></ng-template>
       <ng-template carouselSlide><div class="img-bg img-bg--3"></div></ng-template>
@@ -14,7 +14,7 @@
     <button class="header__call-me-btn"><img src="../../../assets/icons/phone-call-icon.svg" width="50"
                                              alt="Заказать звонок"></button>
     <div class="header__nav-wrap">
-      <div class="header__nav-btn"><span>Свадьбы</span></div>
+      <div class="header__nav-btn" routerLink='wedding'><span>Свадьбы</span></div>
       <div class="header__nav-btn"><span>Дни рожде&shy;ния</span></div>
       <div class="header__nav-btn"><span>Вече&shy;ринки</span></div>
       <div class="header__nav-btn"><span>Корпо&shy;ративы</span></div>

@@ -1,0 +1,57 @@
+.main-page__wrap {
+  //height: 90vh;
+  background-size: cover;
+  position: relative;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.main-page__nav-wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  top: calc(90vh - 120px);
+  position: absolute;
+  width: 100%;
+}
+
+.main-page__nav-btn {
+  width: 300px;
+  height: 150px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 3px solid black;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  text-shadow: 2px 2px 3px white, -2px -2px 3px white;
+
+  &:hover, &:focus {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+
+.wed-bg {
+  background: sienna url(../../../../assets/images/main-page/777.jpg) no-repeat 0 20%;
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+
+  &--2 {
+    background-image: url(../../../../assets/images/main-page/m2.jpg);
+  }
+
+  &--3 {
+    background-image: url(../../../../assets/images/main-page/m3.jpg);
+  }
+}
+
+.carousel {
+  //position: absolute;
+  z-index: -1;
+  width: 100%;
+}
